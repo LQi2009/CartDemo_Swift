@@ -107,7 +107,7 @@ class LZCartViewController: UIViewController,UITableViewDelegate,UITableViewData
         cell?.addNumber({number in
             
             model.number = number
-            
+            self.priceCount()
             print("aaa\(number)")
         })
         
@@ -115,6 +115,7 @@ class LZCartViewController: UIViewController,UITableViewDelegate,UITableViewData
         cell?.cutNumber({number in
             
             model.number = number
+            self.priceCount()             
             print("bbbbb\(number)")
         })
         
